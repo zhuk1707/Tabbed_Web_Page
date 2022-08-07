@@ -24,25 +24,75 @@
         </div>
     </header>
     
-    <div class="content">
+    <main class="main-content">
         <div class="container">
-            <h1 class="content__title">
-                Tabbed Web Page
-            </h1>
-            <h3 class="content__subtitle">
-                Training web page with tabs
-            </h3>
-            <p class="content__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet asperiores cumque delectus dicta distinctio dolores, ducimus eius esse explicabo hic id illo, iusto libero nobis qui repellendus voluptate? Fugit.
-            </p>
-        </div>
-    </div>
+            <div class="content">
+                <h1 class="content__title">
+                    Tabbed Web Page
+                </h1>
+                <h3 class="content__subtitle">
+                    Training web page with tabs
+                </h3>
+                <p class="content__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet asperiores cumque delectus dicta distinctio dolores, ducimus eius esse explicabo hic id illo, iusto libero nobis qui repellendus voluptate? Fugit.
+                </p>
+            </div>
 
-    <div class="tabs">
-        <div class="container">
+            <div class="content">
+                <h1>Horizontal Tabs</h1>
 
+                <div class="tabs content__tabs">
+                    <nav class="tabs__nav tab">
+                        <button class="tab__link"
+                                onclick="openTab(event, 'firstTab')"
+                                id="openedByDefault">First
+                            Tab</button>
+                        <button class="tab__link"
+                                onclick="openTab(event, 'secondTab')">Second
+                            Tab</button>
+                        <button class="tab__link"
+                                onclick="openTab(event, 'thirdTab')">Third
+                            Tab</button>
+                    </nav>
+
+                    <div class="tab__content" id="firstTab">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Aliquam assumenda beatae debitis eaque earum minus, perspiciatis porro quam temporibus velit. Aut blanditiis exercitationem laborum magni maiores omnis placeat provident totam.
+                        </p>
+                    </div>
+
+                    <div class="tab__content" id="secondTab">
+                        <p>
+                            The quick brown fox jumps over the lazy dog.
+                        </p>
+                    </div>
+
+                    <div class="tab__content" id="thirdTab">
+                        <p>
+                            Oops... Nothing here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+<!--            <div class="content">-->
+<!--                <h1>Vertical Tabs</h1>-->
+<!--            </div>-->
+
+            <div class="content">
+                <h1 class="content__title">
+                    Brick quiz whangs jumpy veldt fox!
+                </h1>
+                <h3 class="content__subtitle">
+                    Lorem ipsum dolor sit amet.
+                </h3>
+                <p class="content__text">
+                    Jimmy and Zack, the police explained, were last seen diving into a field of buttered quahogs.
+                </p>
+            </div>
         </div>
-    </div>
+    </main>
 
 </div>
 <script src="src/scripts/main.js"></script>
