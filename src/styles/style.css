@@ -33,6 +33,11 @@ button {
   --deep-color: #000046;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-family: Sora, sans-serif;
   background-color: var(--light-color);
@@ -43,10 +48,21 @@ p {
   line-height: 24px;
 }
 
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 1 auto;
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 20px;
+  overflow: hidden;
 }
 
 .header {
@@ -229,6 +245,19 @@ p {
   to {
     opacity: 1;
   }
+}
+/*===Footer===*/
+.footer {
+  margin-top: 20px;
+  background-color: #1d4b85;
+}
+
+.footer__inner {
+  font-size: 14px;
+  text-align: center;
+  padding: 14px 0;
+  background-color: #1d4b85;
+  color: #b2c9fa;
 }
 
 /*# sourceMappingURL=style.css.map */
