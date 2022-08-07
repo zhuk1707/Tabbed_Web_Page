@@ -22,6 +22,7 @@ li {
 button {
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 :root {
@@ -143,7 +144,6 @@ p {
 .tab button {
   flex: 0 1 33.33%;
   background-color: rgba(178, 201, 250, 0.5);
-  cursor: pointer;
   padding: 12px 18px;
   font-size: inherit;
   color: inherit;
@@ -154,7 +154,7 @@ p {
   background-color: var(--secondary-color);
 }
 .tab button.active {
-  background-color: var(--secondary-color) !important;
+  background-color: var(--secondary-color);
 }
 
 .tab__content {
@@ -165,6 +165,61 @@ p {
 }
 .tab__content p {
   animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*=======================================*/
+.content__vertical-tabs {
+  margin-top: 20px;
+}
+
+.vertical-tabs::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.vertical-tab {
+  height: 300px;
+  width: 30%;
+  float: left;
+}
+.vertical-tab button {
+  display: block;
+  padding: 12px 18px;
+  width: 100%;
+  text-align: left;
+  font-size: inherit;
+  color: inherit;
+  background-color: rgba(178, 201, 250, 0.3137254902);
+  border-radius: 16px 0 0 16px;
+  transition: 0.3s;
+}
+.vertical-tab button:hover {
+  background-color: var(--secondary-color);
+}
+.vertical-tab button.active {
+  background-color: var(--secondary-color);
+}
+
+.vertical-tab__content {
+  width: 70%;
+  height: 300px;
+  float: left;
+  padding: 12px 18px;
+  background-color: var(--secondary-color);
+  border-radius: 0 16px 16px 16px;
+  overflow: clip;
+}
+.vertical-tab__content p {
+  animation: fadeEffect 0.7s;
 }
 
 @keyframes fadeEffect {

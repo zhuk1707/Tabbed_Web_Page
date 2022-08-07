@@ -76,26 +76,58 @@
                 </div>
             </div>
 
-<!--            <div class="content">-->
-<!--                <h1>Vertical Tabs</h1>-->
-<!--            </div>-->
+            <div class="content">
+                <h1>Vertical Tabs</h1>
+
+                <div class="content__vertical-tabs vertical-tabs">
+                    <nav class="vertical-tabs_nav vertical-tab">
+                        <button class="vertical-tab__link"
+                                onclick="openVerticalTab(event,
+                                'firstVerticalTab')"
+                                id="vertTabOpenedByDefault">First Tab</button>
+                        <button class="vertical-tab__link"
+                                onclick="openVerticalTab(event,
+                                'secondVerticalTab')">Second Tab</button>
+                        <button class="vertical-tab__link"
+                                onclick="openVerticalTab(event,
+                                'thirdVerticalTab')">Third Tab</button>
+                    </nav>
+
+                    <div class="vertical-tab__content" id="firstVerticalTab">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, possimus, reprehenderit! Aliquid animi asperiores, beatae incidunt officia reiciendis. Doloremque facilis iusto numquam repellendus veritatis. Ad aliquam et facere in ipsam, iure necessitatibus perferendis placeat provident quidem, tempore tenetur voluptas? Accusantium consequuntur dignissimos ea illum magnam nesciunt, odit perspiciatis quaerat vero!</p>
+                    </div>
+                    <div class="vertical-tab__content"
+                         id="secondVerticalTab">
+                        <p>
+                            Accusamus facilis impedit non odio unde! Commodi illum itaque quae quia saepe veritatis! Architecto at corporis molestias natus quos reiciendis ut. Adipisci, in vero! Ab aut blanditiis esse excepturi fugiat impedit nemo recusandae! Commodi distinctio doloremque fuga fugiat minima tenetur veniam. Aperiam aspernatur consequatur culpa et fugiat, id illum iste magni nam odio quisquam repellat sed sint soluta, tenetur velit?
+                        </p>
+                    </div>
+                    <div class="vertical-tab__content" id="thirdVerticalTab">
+                        <p>
+                            A accusamus deserunt doloremque ducimus in incidunt ipsam laboriosam magnam minima, natus perspiciatis quaerat quia sit! Blanditiis culpa distinctio laudantium nisi, quam voluptas voluptates! Accusamus consectetur consequuntur eos eveniet hic iure laborum maiores mollitia neque, odio officiis optio pariatur quam recusandae repellat unde voluptatibus. Animi architecto beatae consectetur culpa cum dolorem doloribus eaque explicabo fuga fugit iste iure laborum minima nihil officiis possimus, quia repellendus sequi unde vel veritatis vero voluptates.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
             <div class="content">
                 <h1 class="content__title">
-                    Brick quiz whangs jumpy veldt fox!
+                    Lorem ipsum dolor.
                 </h1>
                 <h3 class="content__subtitle">
                     Lorem ipsum dolor sit amet.
                 </h3>
                 <p class="content__text">
-                    Jimmy and Zack, the police explained, were last seen diving into a field of buttered quahogs.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, amet atque consectetur deserunt harum itaque iure maxime nisi nobis perspiciatis placeat praesentium, quas quis quisquam, ratione reiciendis rem sed temporibus velit voluptate? Cupiditate doloribus maiores natus nisi vitae. Accusamus, reprehenderit.
                 </p>
+
             </div>
         </div>
     </main>
 
 </div>
-<script src="src/scripts/main.js"></script>
+<script src="src/scripts/tabs.js"></script>
+<script src="src/scripts/vertical-tabs.js"></script>
 <script src="https://kit.fontawesome.com/b8e2be2715.js" crossorigin="anonymous"></script>
 </body>
 </html>

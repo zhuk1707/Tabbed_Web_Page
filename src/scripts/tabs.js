@@ -17,3 +17,4 @@ function openTab(event, tabName) {
 }
 
 document.getElementById('openedByDefault').click()
+
